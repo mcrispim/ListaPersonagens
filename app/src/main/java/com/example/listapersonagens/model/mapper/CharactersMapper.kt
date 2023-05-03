@@ -1,7 +1,7 @@
 package com.example.listapersonagens.model.mapper
 
 import com.example.listapersonagens.network.service.disney.DisneyCharacter
-import com.example.listapersonagens.model.api.RickyAndMortyCharacter
+import com.example.listapersonagens.network.service.rm.RickyAndMortyCharacter
 
 @JvmName("toDisneyDomain")
 fun List<DisneyCharacter>.toDomain(): List<Character> {
