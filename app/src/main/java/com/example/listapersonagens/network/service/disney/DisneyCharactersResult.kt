@@ -1,4 +1,4 @@
-package com.example.listapersonagens.model.api
+package com.example.listapersonagens.network.service.disney
 
 data class DisneyCharactersResult(
     val data: List<DisneyCharacter>
