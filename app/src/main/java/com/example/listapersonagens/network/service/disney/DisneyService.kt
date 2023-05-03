@@ -1,4 +1,4 @@
-package com.example.listapersonagens.network.service
+package com.example.listapersonagens.network.service.disney
 
 import com.example.listapersonagens.model.api.DisneyCharactersResult
 import retrofit2.http.GET
