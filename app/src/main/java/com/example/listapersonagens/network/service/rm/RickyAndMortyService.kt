@@ -1,4 +1,4 @@
-package com.example.listapersonagens.network.service
+package com.example.listapersonagens.network.service.rm
 
 import com.example.listapersonagens.model.api.RickyAndMortyCharacters
 import retrofit2.http.GET

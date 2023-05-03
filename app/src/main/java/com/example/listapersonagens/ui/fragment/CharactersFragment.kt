@@ -13,7 +13,7 @@ import com.example.listapersonagens.model.domain.CharacterType.DISNEY
 import com.example.listapersonagens.model.domain.CharacterType.RICKY_AND_MORTY
 import com.example.listapersonagens.model.mapper.toDomain
 import com.example.listapersonagens.network.service.disney.DisneyService
-import com.example.listapersonagens.network.service.RickyAndMortyService
+import com.example.listapersonagens.network.service.rm.RickyAndMortyService
 import com.example.listapersonagens.ui.utils.adapter.CharactersAdapter
 import com.example.listapersonagens.ui.utils.extension.gone
 import com.example.listapersonagens.ui.utils.extension.visible
