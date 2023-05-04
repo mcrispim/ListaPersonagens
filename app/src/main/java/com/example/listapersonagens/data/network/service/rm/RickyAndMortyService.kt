@@ -1,5 +1,6 @@
-package com.example.listapersonagens.network.service.rm
+package com.example.listapersonagens.data.network.service.rm
 
+import com.example.listapersonagens.data.network.service.rm.RickyAndMortyCharactersResult
 import retrofit2.http.GET
 
 interface RickyAndMortyService {

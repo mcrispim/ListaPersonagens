@@ -1,7 +1,7 @@
-package com.example.listapersonagens.network.service.rm
+package com.example.listapersonagens.data.network.service.rm
 
-import com.example.listapersonagens.model.domain.Charackter
-import com.example.listapersonagens.network.service.CharacterService
+import com.example.listapersonagens.data.model.Charackter
+import com.example.listapersonagens.data.network.service.CharacterService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

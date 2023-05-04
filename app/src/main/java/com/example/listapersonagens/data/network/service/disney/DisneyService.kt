@@ -1,4 +1,4 @@
-package com.example.listapersonagens.network.service.disney
+package com.example.listapersonagens.data.network.service.disney
 
 import retrofit2.http.GET
 

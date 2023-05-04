@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.example.listapersonagens.R
 import com.example.listapersonagens.databinding.FragmentCharactersBinding
-import com.example.listapersonagens.model.domain.CharacterType.DISNEY
-import com.example.listapersonagens.model.domain.CharacterType.RICKY_AND_MORTY
+import com.example.listapersonagens.data.model.CharacterType.DISNEY
+import com.example.listapersonagens.data.model.CharacterType.RICKY_AND_MORTY
 import com.example.listapersonagens.model.mapper.toDomain
-import com.example.listapersonagens.network.service.disney.DisneyService
-import com.example.listapersonagens.network.service.rm.RickyAndMortyService
+import com.example.listapersonagens.data.network.service.disney.DisneyService
+import com.example.listapersonagens.data.network.service.rm.RickyAndMortyService
 import com.example.listapersonagens.ui.utils.adapter.CharactersAdapter
 import com.example.listapersonagens.ui.utils.extension.gone
 import com.example.listapersonagens.ui.utils.extension.visible

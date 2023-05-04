@@ -1,6 +1,6 @@
-package com.example.listapersonagens.network.authentication
+package com.example.listapersonagens.data.network.authentication
 
-import com.example.listapersonagens.model.domain.User
+import com.example.listapersonagens.data.model.User
 
 object FirebaseAuthenticator {
     

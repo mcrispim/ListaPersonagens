@@ -1,4 +1,4 @@
-package com.example.listapersonagens.model.domain
+package com.example.listapersonagens.data.model
 
 import androidx.annotation.ColorRes
 import com.example.listapersonagens.R

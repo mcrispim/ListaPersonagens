@@ -1,4 +1,4 @@
-package com.example.listapersonagens.network.service.rm
+package com.example.listapersonagens.data.network.service.rm
 
 data class RickyAndMortyCharactersResult(
     val info: Info,
