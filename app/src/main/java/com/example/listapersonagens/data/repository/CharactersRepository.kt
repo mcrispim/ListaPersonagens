@@ -6,9 +6,9 @@ import com.example.listapersonagens.data.network.service.disney.DisneyServiceImp
 import com.example.listapersonagens.data.network.service.rm.RickyAndMortyServiceImpl
 
 class CharactersRepository(
-    private val disneyService: DisneyServiceImpl,
-    private val rickyAndMortyService: RickyAndMortyServiceImpl
 ) {
+    private val disneyService = DisneyServiceImpl()
+    private val rickyAndMortyService = RickyAndMortyServiceImpl()
 
     suspend fun getCharacters(type: CharacterType): List<Charackter> {
         return when(type) {

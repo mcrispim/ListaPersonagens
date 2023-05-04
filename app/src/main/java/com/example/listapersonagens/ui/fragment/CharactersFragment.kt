@@ -122,13 +122,16 @@ class CharactersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //val viewModel: CharactersFragmentViewModel by viewModels()
+        viewModel = ViewModelProvider(this).get(CharactersFragmentViewModel::class.java)
         setupView(viewModel)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(CharactersFragmentViewModel::class.java)
-    }
+//    @Deprecated("Deprecated in Java")
+//    override fun onActivityCreated(savedInstanceState: Bundle?) {
+//        super.onActivityCreated(savedInstanceState)
+//        viewModel = ViewModelProvider(this).get(CharactersFragmentViewModel::class.java)
+//    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
