@@ -7,25 +7,24 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.example.listapersonagens.R
+import com.example.listapersonagens.data.model.Charackter
 import com.example.listapersonagens.databinding.ItemCharacterBinding
-import com.example.listapersonagens.model.domain.Character
-
 
 class CharactersAdapter :
-    ListAdapter<Character, CharactersAdapter.CharactersViewHolder>(DIFF_CALLBACK) {
+    ListAdapter<Charackter, CharactersAdapter.CharactersViewHolder>(DIFF_CALLBACK) {
     
     companion object {
-        val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Character>() {
+        val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Charackter>() {
             override fun areItemsTheSame(
-                oldItem: Character,
-                newItem: Character,
+                oldItem: Charackter,
+                newItem: Charackter,
             ): Boolean {
                 return oldItem.hashCode() == newItem.hashCode()
             }
         
             override fun areContentsTheSame(
-                oldItem: Character,
-                newItem: Character,
+                oldItem: Charackter,
+                newItem: Charackter,
             ): Boolean {
                 return oldItem == newItem
             }
@@ -35,7 +34,7 @@ class CharactersAdapter :
     class CharactersViewHolder(private val binding: ItemCharacterBinding) :
         ViewHolder(binding.root) {
         
-        fun bind(item: Character) {
+        fun bind(item: Charackter) {
             with(binding) {
                 tvName.text = item.name
                 
