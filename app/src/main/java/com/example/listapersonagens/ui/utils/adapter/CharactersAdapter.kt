@@ -45,8 +45,7 @@ class CharactersAdapter :
             }
         }
     }
-    
-    
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharactersViewHolder {
         val view = ItemCharacterBinding.inflate(LayoutInflater.from(parent.context))
         return CharactersViewHolder(view)

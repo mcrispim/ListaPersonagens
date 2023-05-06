@@ -5,8 +5,7 @@ import com.example.listapersonagens.data.model.CharacterType
 import com.example.listapersonagens.data.network.service.disney.DisneyServiceImpl
 import com.example.listapersonagens.data.network.service.rm.RickyAndMortyServiceImpl
 
-class CharactersRepository(
-) {
+class CharactersRepository {
     private val disneyService = DisneyServiceImpl()
     private val rickyAndMortyService = RickyAndMortyServiceImpl()
 
