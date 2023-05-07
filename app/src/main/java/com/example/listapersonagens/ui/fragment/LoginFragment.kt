@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.listapersonagens.R
 import com.example.listapersonagens.databinding.FragmentLoginBinding
-import com.example.listapersonagens.data.network.authentication.FirebaseAuthenticator
+import com.example.listapersonagens.data.remote.authentication.FirebaseAuthenticator
 
 
 class LoginFragment : Fragment() {

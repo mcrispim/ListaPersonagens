@@ -1,4 +1,4 @@
-package com.example.listapersonagens.viewmodels
+package com.example.listapersonagens.ui.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.listapersonagens.data.model.Charackter
 import com.example.listapersonagens.data.model.CharacterType
-import com.example.listapersonagens.data.repository.CharactersRepository
+import com.example.listapersonagens.data.repositories.CharactersRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

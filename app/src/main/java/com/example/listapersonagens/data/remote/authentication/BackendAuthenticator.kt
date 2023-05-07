@@ -1,4 +1,4 @@
-package com.example.listapersonagens.data.network.authentication
+package com.example.listapersonagens.data.remote.authentication
 
 import com.example.listapersonagens.data.model.User
 

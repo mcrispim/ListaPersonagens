@@ -1,9 +1,9 @@
-package com.example.listapersonagens.data.repository
+package com.example.listapersonagens.data.repositories
 
 import com.example.listapersonagens.data.model.Charackter
 import com.example.listapersonagens.data.model.CharacterType
-import com.example.listapersonagens.data.network.service.disney.DisneyServiceImpl
-import com.example.listapersonagens.data.network.service.rm.RickyAndMortyServiceImpl
+import com.example.listapersonagens.data.remote.service.disney.DisneyServiceImpl
+import com.example.listapersonagens.data.remote.service.rm.RickyAndMortyServiceImpl
 
 class CharactersRepository {
     private val disneyService = DisneyServiceImpl()

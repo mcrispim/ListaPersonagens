@@ -15,7 +15,7 @@ import com.example.listapersonagens.databinding.FragmentCharactersBinding
 import com.example.listapersonagens.ui.utils.adapter.CharactersAdapter
 import com.example.listapersonagens.ui.utils.extension.gone
 import com.example.listapersonagens.ui.utils.extension.visible
-import com.example.listapersonagens.viewmodels.CharactersFragmentViewModel
+import com.example.listapersonagens.ui.viewmodels.CharactersFragmentViewModel
 
 /*
 - Qual o princípio e suas características?

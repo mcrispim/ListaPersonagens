@@ -1,4 +1,4 @@
-package com.example.listapersonagens.data.network.service
+package com.example.listapersonagens.data.remote.service
 
 import com.example.listapersonagens.data.model.Charackter
 

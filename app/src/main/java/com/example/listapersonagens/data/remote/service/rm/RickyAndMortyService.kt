@@ -1,4 +1,4 @@
-package com.example.listapersonagens.data.network.service.rm
+package com.example.listapersonagens.data.remote.service.rm
 
 import retrofit2.http.GET
 
