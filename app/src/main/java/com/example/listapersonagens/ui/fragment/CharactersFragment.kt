@@ -16,6 +16,8 @@ import com.example.listapersonagens.ui.utils.adapter.CharactersAdapter
 import com.example.listapersonagens.ui.utils.extension.gone
 import com.example.listapersonagens.ui.utils.extension.visible
 import com.example.listapersonagens.ui.viewmodels.CharactersFragmentViewModel
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 /*
 - Qual o princípio e suas características?
@@ -100,13 +102,13 @@ import com.example.listapersonagens.ui.viewmodels.CharactersFragmentViewModel
     princípio aberto-fechado.
 */
 
+@AndroidEntryPoint
 class CharactersFragment : Fragment() {
 
     private var _binding: FragmentCharactersBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var viewModel: CharactersFragmentViewModel
-    //private var viewModel: CharactersFragmentViewModel by viewModels()
+    lateinit var viewModel: CharactersFragmentViewModel
 
     private val charactersAdapter = CharactersAdapter()
 
@@ -121,7 +123,7 @@ class CharactersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //val viewModel: CharactersFragmentViewModel by viewModels()
+
         viewModel = ViewModelProvider(this)[CharactersFragmentViewModel::class.java]
         setupView(viewModel)
     }

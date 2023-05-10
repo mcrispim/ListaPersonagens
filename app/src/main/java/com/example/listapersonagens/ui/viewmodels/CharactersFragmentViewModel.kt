@@ -7,11 +7,16 @@ import androidx.lifecycle.viewModelScope
 import com.example.listapersonagens.data.model.Charackter
 import com.example.listapersonagens.data.model.CharacterType
 import com.example.listapersonagens.data.repositories.CharactersRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
-class CharactersFragmentViewModel : ViewModel() {
+@HiltViewModel
+class CharactersFragmentViewModel @Inject constructor(
+    private val repository: CharactersRepository
+): ViewModel() {
 
     private val _characters = MutableLiveData<List<Charackter>>()
     val characters: LiveData<List<Charackter>>
@@ -20,8 +25,6 @@ class CharactersFragmentViewModel : ViewModel() {
     private val _characterType = MutableLiveData<CharacterType>()
     val characterType: LiveData<CharacterType>
         get() = _characterType
-
-    private val repository = CharactersRepository()
 
     fun setCharacterType(characterType: CharacterType) {
         _characterType.value = characterType
@@ -32,5 +35,4 @@ class CharactersFragmentViewModel : ViewModel() {
             }
         }
     }
-
 }
