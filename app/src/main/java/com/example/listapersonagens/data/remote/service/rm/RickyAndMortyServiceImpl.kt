@@ -14,14 +14,17 @@ class RickyAndMortyServiceImpl : CharacterService {
     private val rickyAndMortyService =
         retrofitRickyAndMorty.create(RickyAndMortyService::class.java)
 
-    override suspend fun getCharacters(): List<Charackter> {
-        val response = rickyAndMortyService.getCharacters()
-        val rAndMModelChars = response.results
-        return rAndMModelChars.map {
+    fun RickyAndMortyCharactersResult.toCharacters(): List<Charackter> {
+        return this.results.map {
             Charackter(
                 name = it.name,
                 imageUrl = it.image
             )
         }
+    }
+
+    override suspend fun getCharacters(): List<Charackter> {
+        val response = rickyAndMortyService.getCharacters()
+        return response.toCharacters()
     }
 }
