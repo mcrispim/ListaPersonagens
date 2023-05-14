@@ -13,14 +13,17 @@ class DisneyServiceImpl : CharacterService {
         .build()
     private val disneyService: DisneyService = retrofitDisney.create(DisneyService::class.java)
 
-    override suspend fun getCharacters(): List<Charackter> {
-        val response = disneyService.getCharacters()
-        val disneyModelChars = response.data
-        return disneyModelChars.map {
+    private fun DisneyCharactersResult.toCharacters(): List<Charackter> {
+        return data.map {
             Charackter(
                 name = it.name,
                 imageUrl = it.imageUrl
             )
         }
+    }
+
+    override suspend fun getCharacters(): List<Charackter> {
+        val response = disneyService.getCharacters()
+        return response.toCharacters()
     }
 }

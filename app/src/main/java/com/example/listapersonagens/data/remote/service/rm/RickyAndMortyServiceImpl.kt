@@ -14,7 +14,7 @@ class RickyAndMortyServiceImpl : CharacterService {
     private val rickyAndMortyService =
         retrofitRickyAndMorty.create(RickyAndMortyService::class.java)
 
-    fun RickyAndMortyCharactersResult.toCharacters(): List<Charackter> {
+    private fun RickyAndMortyCharactersResult.toCharacters(): List<Charackter> {
         return this.results.map {
             Charackter(
                 name = it.name,
